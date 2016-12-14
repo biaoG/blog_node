@@ -206,9 +206,9 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family:PingFang SC, "Helvetica Neue", Helvetica, sans-serif,"microsoft yahei";
   font-size: 0.85rem;
-  line-height: 1.5;
+  line-height: 1;
   color: #3d4145;
   background: #f5f5f5;
   overflow: hidden;
@@ -302,6 +302,7 @@ a:active {
     background: #f5f5f5;
     overflow: hidden;
 }
+
 /*导航条，顶部标题行*/
 .bar{
     position: absolute;
@@ -327,6 +328,27 @@ a:active {
     height: 2.5rem;
     padding: 0;
     table-layout: fixed;
+}
+.bar-tab:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: auto;
+    right: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #b2b2b2;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+.bar-tab ~ .content {
+    bottom: 2.5rem;
+}
+.nav ~ .content {
+    top: 2.2rem;
 }
 .bar-tab .tab-item {
     position: relative;
@@ -355,6 +377,8 @@ background-position: 0 100%;
     top: 0.15rem;
 }
 
+ 
+
 /*元素*/
 .title{position: absolute;
     display: block;
@@ -367,6 +391,10 @@ background-position: 0 100%;
     color: #fff;
     text-align: center;
     white-space: nowrap;}
+
+.title-tag{padding:0.125rem 0.2rem;border-radius: 3px;color:#333;font-size: 0.5rem;display: inline-block;vertical-align:middle;margin-left:0.25rem;}
+.title-tag.blue{background-color:#00aaee;color:#fff;}
+.title-tag.yellow{background-color: #ffcc53;color:#fff;}
 
 /* icon contain*/
 .icon {

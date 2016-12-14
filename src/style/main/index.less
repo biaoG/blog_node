@@ -1,0 +1,70 @@
+.home-top{
+	height:7.2rem;background-color:#00aaee;background-image: url(../../assets/images/home-top-bg.png);
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	position: relative;
+	.banner{height:7.2rem;width:100%;position: relative;display: block;}
+}
+
+@homeBan:9.6rem;
+.home-banner{
+	padding:0.75rem 0;
+	overflow-x:auto;
+	height: 6.3rem;
+	margin-bottom: 0.75rem;
+	background-color: #fff;
+	font-size:0;
+	text-align: left; 
+	.banner-contain{width:@homeBan * 4 + 3;
+		.banner-link{height: 4.8rem;width:@homeBan;margin-left:0.6rem;display:inline-block;float: left;}
+	}	
+}
+.home-banner::-webkit-scrollbar{display: none;}
+
+.home-pro{ margin-bottom: 0.75rem;
+	.pro-title{font-size:0.8rem;color:#333;}
+}
+.card-pro{position: relative;background:#fff;
+	.card-head{padding: 0.75rem 0.5rem;min-height: 2.2rem;position: relative;    display: flex;box-sizing: border-box;    align-items: center;    -webkit-box-pack: justify;
+    -webkit-box-align: center;}
+    .card-head:after{
+    	    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: #e5e5e5;
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    }
+    .view-tab{
+    -webkit-align-self: center;
+    align-self: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-lines: single;
+    -moz-box-lines: single;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+	    .tab-item{
+		    width: 100%;
+		    position: relative;
+		    height: 4.2rem;
+		    padding-bottom:1.3rem;
+		    -webkit-box-flex: 1;
+		    -ms-flex: 1;	
+		    text-align: center;	
+		    .top{font-size: 0.8rem;color:#333;display: block;position: absolute;left:
+		    	0;right:0;bottom:2rem;}
+		   	.top.red{font-size:1.35rem;color:#ff5b45;}
+		   	.top.red sub{vertical-align:middle;font-size: 0.8rem;}
+		    .down{font-size: 0.6rem;color:#808080;display: block;position: absolute;left:0;right:0;top:2.375rem;}
+	    }
+    }
+}

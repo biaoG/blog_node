@@ -3,7 +3,7 @@ const glob = require('glob');
 var config = {
     entry: {
         index:'./src/js/index.js',
-        vendor: ['react', 'react-dom']
+        vendor: ['react', 'react-dom','react-router']
     },
     output: {
         path: __dirname + '/dist/js/',
