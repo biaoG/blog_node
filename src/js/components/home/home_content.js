@@ -35,8 +35,8 @@ export default class HomeContent extends Component{
 						</Link>
 						<div className="view-tab">
 							<div className="tab-item"><span className="top red">15<sub>%</sub></span><span className="down">年化收益率</span></div>
-							<div className="tab-item"><span className="top">10天</span><span className="down">投资期限</span></div>
-							<div className="tab-item"><span className="top">100元</span><span className="down">起投金额</span></div>
+							<div className="tab-item line"><span className="top">10天</span><span className="down">投资期限</span></div>
+							<div className="tab-item line"><span className="top">100元</span><span className="down">起投金额</span></div>
 						</div>
 					</div>
 				</div>

@@ -42,7 +42,24 @@
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
     }
-    .view-tab{
+    .tab-item{height: 4.2rem;
+		    padding-bottom:1.3rem;}
+	.tab-item.line:before{
+    	content:'';
+    	width:1px;
+    	height:1.4rem;
+    	position: absolute;
+    	left:0;
+    	bottom:1.3rem;
+    	background-color:#e5e5e5;
+    }
+    .top{font-size: 0.8rem;color:#333;display: block;position: absolute;left:
+		    	0;right:0;bottom:2rem;}
+	.top.red{font-size:1.35rem;color:#ff5b45;}
+   	.top.red sub{vertical-align:middle;font-size: 0.8rem;}
+    .down{font-size: 0.6rem;color:#808080;display: block;position: absolute;left:0;right:0;top:2.375rem;}
+}
+.view-tab{
     -webkit-align-self: center;
     align-self: center;
     display: -webkit-box;
@@ -55,16 +72,35 @@
 	    .tab-item{
 		    width: 100%;
 		    position: relative;
-		    height: 4.2rem;
-		    padding-bottom:1.3rem;
 		    -webkit-box-flex: 1;
 		    -ms-flex: 1;	
 		    text-align: center;	
-		    .top{font-size: 0.8rem;color:#333;display: block;position: absolute;left:
-		    	0;right:0;bottom:2rem;}
-		   	.top.red{font-size:1.35rem;color:#ff5b45;}
-		   	.top.red sub{vertical-align:middle;font-size: 0.8rem;}
-		    .down{font-size: 0.6rem;color:#808080;display: block;position: absolute;left:0;right:0;top:2.375rem;}
+		    
 	    }
+	    
     }
+.user-head{
+	background-color:#00aaee;
+	height: 7.25rem;
+	position: relative;
+	.head-top{padding:0 1.5rem;
+		.top-title{font-size: 0.6rem;color:#fff;padding-top:0.6rem;}
+		.top-number{font-size: 1.5rem;color:#fff;padding-top:0.5rem;}
+	}
+	.head-tab{
+		height:3.2rem;position: absolute;left:0;right:0;bottom:0;color:#fff;
+		.tab-item{height: 3.2em;}
+		.tab-item.line:before{
+	    	content:'';
+	    	width:1px;
+	    	height:1.45rem;
+	    	position: absolute;
+	    	left:0;
+	    	top:0.85rem;
+	    	background-color:rgba(255,255,255,0.3);
+	    }
+		.tab-title{padding-left:1.5rem;font-size:0.6rem;display: block;text-align: left;padding-top: 0.7rem}
+		.tab-num{padding-left:1.5rem;font-size: 0.9rem; display: block;text-align: left;padding-top: 0.4rem;}
+	}
+
 }

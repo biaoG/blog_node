@@ -1,21 +1,20 @@
 import React,{Component,PropTypes} from 'react'
-import { reset } from '../public/resetDom'
 
 import HeaderUser from '../components/header_user'
 import FootNav from '../components/foot_nav'
-import HomeContent from '../components/home_content'
+
+import HomeContent from '../components/home/home_content'
+import UserContent from '../components/user/user_content'
 
 class App extends Component{
-	componentWillMount(){
-		reset();
-	}
+	 
 	render(){
 		return (
 			<div className="page-group">
 				<div className="page">
 					<HeaderUser />
 					<FootNav/>
-					<HomeContent/>
+					{this.props.children}
 				</div>
 			</div>
 		)
