@@ -6,11 +6,12 @@ export default class Updata extends Component{
         super(props);
         this.state = {
             progress:0,
-            isupdate:false,
+            isupdate:this.props.updata,
             width:'0%'
         };
     }
 	render(){
+		
 		let btnhide= this.state.isupdate ? 'display:none' : '';
 		return (
 			<div className="page modal-over">
@@ -43,7 +44,12 @@ export default class Updata extends Component{
 				that.setState({width:proce+'%'});
 			}else{
 				clearInterval(that.timer);
+				that.props.setUpdate(false);
 			}
 		},30);
 	}
+}
+Updata.PropTypes={
+	setUpdate:PropTypes.func.isRequired,
+	updata:PropTypes.bool.isRequired
 }

@@ -15,8 +15,7 @@ class App extends Component{
 	render(){
 		{/*判断是否更新*/}
 		let modal;
-    	this.state.isUpdata ? modal= <Updata updata={this.state.isUpdate} /> : null;
-
+    	this.state.isUpdata ? modal= <Updata updata={this.state.isUpdate} setUpdate={state => this.setUpdate(state)} /> : null;
 		return (
 			<div className="page-group">
 				<div className="page">
@@ -25,12 +24,12 @@ class App extends Component{
 					{this.props.children}
 				</div>
 				 {modal}
-				 
 			</div>
 		)
 	}
-	update(state){
-		this.setState({	isupdate:state});
+	setUpdate(state){
+		console.log(state);
+		this.setState({	isUpdata:state});
 	}
 }
 export default App 
