@@ -1,5 +1,6 @@
 import React,{Component,PropTypes} from 'react'
-
+import { Link } from 'react-router' 
+ import HomeCenter from '../home/home_center'
 export default class UserContent extends Component{
 	render(){
 		return(
@@ -20,6 +21,43 @@ export default class UserContent extends Component{
 						</div>
 					</div>		
 				</div>
+				<div className="user-tab">
+					<div className="view-tab">
+						<Link to="" className="tab-item u-link">提现</Link>
+						<Link to="" className="tab-item u-link">充值</Link>
+					</div>
+				</div>
+				<div className="user-link">
+					<div className="link-line view-tab">
+						<Link to="" className="link-item tab-item">
+							<div className="item-logo"><img src="./assets/ico/icon-search.png"/></div>
+							<div className="item-name">回款日历</div>
+						</Link>
+						<Link to="" className="link-item tab-item line">
+							<div className="item-logo"><img src="./assets/ico/icon-wdtz.png"/></div>
+							<div className="item-name">我的投资</div>
+						</Link>
+						<Link to="" className="link-item tab-item line">
+							<div className="item-logo"><img src="./assets/ico/icon-jymx.png"/></div>
+							<div className="item-name">交易明细</div>
+						</Link>
+					</div>
+					<div className="link-line view-tab">
+						<Link to="" className="link-item tab-item">
+							<div className="item-logo"><img src="./assets/ico/icon-search.png"/></div>
+							<div className="item-name">新手任务</div>
+						</Link>
+						<Link to="" className="link-item tab-item line">
+							<div className="item-logo"><img src="./assets/ico/icon-wdtz.png"/></div>
+							<div className="item-name">我的卡券</div>
+						</Link>
+						<Link to="" className="link-item tab-item line">
+							<div className="item-logo"><img src="./assets/ico/icon-jymx.png"/></div>
+							<div className="item-name">VIP等级</div>
+						</Link>
+					</div>
+				</div>
+				 <HomeCenter/>
 			</div>
 		)
 	}

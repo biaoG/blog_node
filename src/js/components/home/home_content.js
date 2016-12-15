@@ -2,6 +2,7 @@ import React,{Component,PropTypes} from 'react'
 import {  Link } from 'react-router' 
 
 import HomeBan from './home_ban'
+import HomeCenter from './home_center'
 
 export default class HomeContent extends Component{ 
 	handleSwipe(e) {
@@ -16,14 +17,7 @@ export default class HomeContent extends Component{
 				</div>
 				 
 				 {/* 中间banner */}
-				<div className="home-banner">
-					<div className="banner-contain clearfix">
-						<Link to="" className="banner-link "><img src="./assets/images/home-banner1.png"/></Link>
-						<Link to="" className="banner-link"><img src="./assets/images/home-banner2.png"/></Link>
-						<Link to="" className="banner-link "><img src="./assets/images/home-banner3.png"/></Link>
-						<Link to="" className="banner-link"><img src="./assets/images/home-banner4.png"/></Link>
-					</div>
-				</div>
+				<HomeCenter/>
 
 				{/*产品*/}
 				<div className="home-pro">
