@@ -8,7 +8,7 @@ class App extends Component{
 	constructor(props){
         super(props);
         this.state = {
-            isUpdata: true,
+            isUpdata: false,
         };
     }
      
@@ -28,7 +28,6 @@ class App extends Component{
 		)
 	}
 	setUpdate(state){
-		console.log(state);
 		this.setState({	isUpdata:state});
 	}
 }
