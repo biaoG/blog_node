@@ -1,9 +1,8 @@
 import React,{Component,PropTypes} from 'react'
 
-import HeaderUser from '../components/header_user'
+import HeaderTitle from '../components/header_title'
 import FootNav from '../components/foot_nav'
 import Updata from '../components/updata'
-
 class App extends Component{
 	constructor(props){
         super(props);
@@ -11,7 +10,6 @@ class App extends Component{
             isUpdata: false,
         };
     }
-     
 	render(){
 		{/*判断是否更新*/}
 		let modal;
@@ -19,7 +17,7 @@ class App extends Component{
 		return (
 			<div className="page-group">
 				<div className="page">
-					<HeaderUser />
+					<HeaderTitle />
 					<FootNav/>
 					{this.props.children}
 				</div>
@@ -31,4 +29,4 @@ class App extends Component{
 		this.setState({	isUpdata:state});
 	}
 }
-export default App 
+export default App

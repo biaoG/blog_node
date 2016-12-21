@@ -1,6 +1,6 @@
 import React,{Component,PropTypes} from 'react'
 import {  Link } from 'react-router' 
-export default class HeaderUser extends Component{ 
+export default class HeaderTitle extends Component{ 
 	render(){
 		return(
 			<header className="bar nav blue">

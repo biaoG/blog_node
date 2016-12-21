@@ -206,11 +206,11 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  font-family:PingFang SC, "Helvetica Neue", Helvetica, sans-serif,"microsoft yahei";
+  font-family:PingFang SC,"Helvetica Neue", Helvetica, sans-serif,"microsoft yahei";
   font-size: 0.85rem;
   line-height: 1;
   color: #3d4145;
-  background: #f5f5f5;
+  background-color: #fff;
   overflow: hidden;
 }
 a,
@@ -303,6 +303,7 @@ a:active {
     background: #f5f5f5;
     overflow: hidden;
 }
+.page.page-login,.page-group.page-login{background:#fff;}
 .modal-over{background:rgba(0,0,0,0.5);z-index: 3000;}
 
 /*弹窗*/
@@ -335,6 +336,7 @@ a:active {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+.bar.reg-line:after{content:'';height:1px;width:100%;display:block;position: absolute;left:0;right:0;bottom:0;background-color: #0099d6; transform-origin: 50% 100%;}
 .bar.nav{top:0;}
 .bar.blue{background-color:@blue}
 .bar .icon{    position: relative;
@@ -363,6 +365,14 @@ a:active {
     -webkit-transform-origin:50% 100% ;
     transform-origin: 50% 100% ;
 }
+.bar-tab.no-line{background-color: #f5f5f5;line-height: 2.5rem;text-align: center;
+  .kf-link{font-size:0.6rem;color:#00aaee;}
+}
+.bar-tab.no-line:before{display:none;}
+.bar-tab.reg{line-height: 2.5rem;text-align: center;background-color: #fff;
+  .kf-link{font-size:0.6rem;color:#00aaee;}
+}
+
 .bar-tab ~ .content {
     bottom: 2.5rem;
 }
@@ -429,9 +439,11 @@ background-position: 0 100%;
 	margin-top:0.3rem;
 	width: 1.5rem;height:1.5rem;
 }
+.ico-img.demu-icon{width:0.9rem;height:0.9rem;margin-top:0.65rem;}
 .ico-img.bell{width:0.9rem;height: 1rem;
 	margin-top:0.65rem;
 }
+.ico-img.back-icon{width:1rem;height:1rem;margin-top:0.6rem;}
 .icon.icon-home{
 	width:1.05rem;height: 1.05rem;display: inline-block;background:url(../../assets/ico/ico-home-all.png) no-repeat;background-size:100% auto;background-position: 0 0;
 }
@@ -452,7 +464,7 @@ background-position: 0 100%;
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   /*横线*/
-  .bar-tab:before,.card-pro .card-head:after,.user-tab:after,.user-link .link-line:after {
+  .bar-tab:before,.card-pro .card-head:after,.user-tab:after,.user-link .link-line:after,.bar.reg-line:after {
     transform: scaleY(0.5);
   }
   /*竖线*/
@@ -462,7 +474,7 @@ background-position: 0 100%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 3) {
   /*横线*/
-  .bar-tab:before,.card-pro .card-head:after,.user-tab:after,.user-link .link-line:after {
+  .bar-tab:before,.card-pro .card-head:after,.user-tab:after,.user-link .link-line:after,.bar.reg-line:after {
     transform: scaleY(0.33);
   }
   /*竖线*/

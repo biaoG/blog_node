@@ -12,7 +12,6 @@ export default class Updata extends Component{
     }
 	render(){
 		
-		let btnhide= this.state.isupdate ? 'display:none' : '';
 		return (
 			<div className="page modal-over">
 				<div className="updata-contain">
