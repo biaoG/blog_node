@@ -6,6 +6,8 @@ import {render} from 'react-dom'
 import App from './containers/App'
 import UserLg from './containers/user_login'
 import UserReg from './containers/user_reg'
+import GetLoginPwd from './containers/get_login_pwd'
+import Baina from './containers/baina'
 
 import HomeContent from './components/home/home_content'
 import UserContent from './components/user/user_content'
@@ -20,7 +22,10 @@ render(
 			<Route path="user" component={UserContent} />
 		</Route>
 		<Route path="login" component={UserLg} />
-		<Route path="reg" component={UserReg} />		
+		<Route path="reg" component={UserReg} />
+		<Route path="getpwd" component={GetLoginPwd} />		
+		<Route path="baina" component={Baina} />		
+
 	</Router>
 	,
 	document.getElementById("app")

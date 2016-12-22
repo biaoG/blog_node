@@ -1,8 +1,8 @@
 import React,{Component,PropTypes} from 'react'
 import { Link } from 'react-router'
-import { isTel } from '../../public/resetDom'
+import { isTel } from '../../public/resetDom'  
 
-export default class UserRegs extends Component{
+export default  class UserGetpwd extends Component{
 	constructor(props){
         super(props);
         this.state = {
@@ -73,11 +73,8 @@ export default class UserRegs extends Component{
 		let newPwdShow={display:this.state.newPwd.length > 0  ? "block" : "none"};
 		return(
 			<div className="content">
-				<div className="reg-step">
-					<span className="step on">① 验证手机号</span>	
-					<span className={this.state.thisStep > 1 ? "step on" :"step"}>② 设置登录密码</span>	
-					<span className={this.state.thisStep > 2 ? "step on" :"step"}>③ 注册完成</span>	
-					<div className="send-sms" style={smsShow}>已发送短信验证码至：{this.state.tel} ，请稍候...</div>
+				<div className="reg-step"  style={smsShow}>
+					<div className="send-sms">已发送短信验证码至：{this.state.tel} ，请稍候...</div>
 				</div>
 				<div className={this.state.thisStep == 1 ? '' : 'hide'}>
 					<div className="step-form">
@@ -95,9 +92,7 @@ export default class UserRegs extends Component{
 					<div className="step-next">
 						<button className={this.state.toSecd ? "to-next on" : "to-next"} onClick={() => this.setStep(2)}>下一步</button>
 					</div>
-					<div className="step-note">
-						注册即为同意<Link className="link" to="">《***用户注册协议》</Link>
-					</div>
+					 
 				</div>
 				<div className={this.state.thisStep == 2 ? '' : 'hide'}>
 					<div className="step-form">
@@ -113,18 +108,15 @@ export default class UserRegs extends Component{
 						</div>
 					</div>
 					<div className="step-next">
-						<button className={this.state.tothrid ? "to-next on" : "to-next"} onClick={() => this.setStep(3)}>完成注册</button>
-					</div>
-					<div className="step-note">
-						注册即为同意<Link className="link" to="">《***用户注册协议》</Link>
+						<button className={this.state.tothrid ? "to-next on" : "to-next"} onClick={() => this.setStep(3)}>设置密码</button>
 					</div>
 				</div>
 				<div className={this.state.thisStep == 3 ? '' : 'hide'}>
-					<div className="step-next">
-						<Link to="" className="to-next on">完成注册</Link>
+					<div className="step-next top">
+						<Link to="user" className="to-next on">密码已找回</Link>
 					</div>
 				</div>
-			</div>
+			</div> 
 		)
 	}
 }

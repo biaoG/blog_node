@@ -44,15 +44,15 @@ export default class UserContent extends Component{
 					</div>
 					<div className="link-line view-tab">
 						<Link to="" className="link-item tab-item">
-							<div className="item-logo"><img src="./assets/ico/icon-search.png"/></div>
+							<div className="item-logo"><img src="./assets/ico/icon-xsrw.png"/></div>
 							<div className="item-name">新手任务</div>
 						</Link>
 						<Link to="" className="link-item tab-item line">
-							<div className="item-logo"><img src="./assets/ico/icon-wdtz.png"/></div>
+							<div className="item-logo"><img src="./assets/ico/icon-wdkq.png"/></div>
 							<div className="item-name">我的卡券</div>
 						</Link>
 						<Link to="" className="link-item tab-item line">
-							<div className="item-logo"><img src="./assets/ico/icon-jymx.png"/></div>
+							<div className="item-logo"><img src="./assets/ico/icon-vip.png"/></div>
 							<div className="item-name">VIP等级</div>
 						</Link>
 					</div>
