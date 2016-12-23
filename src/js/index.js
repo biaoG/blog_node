@@ -8,10 +8,13 @@ import UserLg from './containers/user_login'
 import UserReg from './containers/user_reg'
 import GetLoginPwd from './containers/get_login_pwd'
 import Baina from './containers/baina'
+import WhyBn from './containers/whybn'
+import GuShou from './containers/gushou'
+import Whygs from './containers/whygs'
+import News from './containers/news'
 
 import HomeContent from './components/home/home_content'
 import UserContent from './components/user/user_content'
-
 
 reset();
 
@@ -25,7 +28,10 @@ render(
 		<Route path="reg" component={UserReg} />
 		<Route path="getpwd" component={GetLoginPwd} />		
 		<Route path="baina" component={Baina} />		
-
+		<Route path="whybn" component={WhyBn} />
+		<Route path="gs" component={GuShou} />	
+		<Route path="whygs" component={Whygs} />	
+		<Route path="news" component={News} />	
 	</Router>
 	,
 	document.getElementById("app")

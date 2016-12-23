@@ -219,7 +219,7 @@
 	.link{color:#00aaee;}
 }
 
-.bai-list{padding-right:0.3rem; 
+.bai-list{padding-right:0.3rem; padding-top:0.3rem;
 	.bai-item{
 		width:7.55rem;margin-left:0.3rem;
 		.item-img{height: 7.6rem;
@@ -227,7 +227,7 @@
 		}
 		.item-foot{
 			padding:0.6rem 0.5rem 0.7rem 0.5rem;height:3.375rem;
-			.pro-title{font-size: 0.7rem;color:#333;}
+			.pro-title{font-size: 0.7rem;color:#333;display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 			.desc{font-size:0.6rem;color:#a5a5a5; margin-bottom: 0.1rem;
 				text-overflow: ellipsis;overflow : hidden;display: -webkit-box;-webkit-line-clamp: 2;	
 -webkit-box-orient: vertical; line-height:0.8rem;
@@ -235,4 +235,96 @@
 		}
 	}
 }
-
+.gs-timeselect{
+	width:16rem;height: 2.45rem;overflow-x: auto;background-color: #fff;position: relative;overflow-y:hidden;
+	.gs-time-contain{
+		width:20rem; line-height: 2.45rem;padding:0 0.5rem;
+		.time-item{
+			width:4rem;height: 1.5rem;line-height: 1.5rem;text-align: center;background-color: #ebebf0;color:#a5a5a5;font-size: 0.6rem;border-radius:0.75rem;display: inline-block;margin-left:0.75rem;
+		}
+		.time-item.on{background-color: #00aaee;color:#fff;}
+	}
+	.gs-time-contain:after{
+	content:'';display: block;height: 1px;position: absolute;width: 20rem;background-color:#e5e5e5; transform-origin: 50% 100%;left:0;right:0;bottom:0; 
+	}
+}
+.gs-timeselect::-webkit-scrollbar{display: none;}
+.gs-product{
+	background-color: #fff;padding-bottom:0.75rem;
+	.product-item{
+		height: 3.7rem;position: relative;
+		.item-left{ position: absolute;left:0;top:0;width:6.4rem;padding-left:1rem;
+			padding-top:0.75rem;
+			.percent{font-size: 1.35rem;margin-bottom:0.3rem;color:#ff5b45;
+				sub{font-size:0.75rem;}
+			}
+			.desc{font-size: 0.6rem;color:#a5a5a5;}
+		}
+		.item-right{width:9.6rem;position:absolute;right:0;top:0;padding-left:0.6rem;padding-top:0.8rem;
+			.pro-title{color:#333;font-size: 0.75rem;margin-bottom: 0.75rem; display: block; white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}
+			.pro-tag{font-size: 0.6rem;color:#a5a5a5;}
+			.buy-log{height: 1.5rem;line-height: 1.5rem;text-align: center;width: 1.6rem;border-top-left-radius:0.75rem;border-bottom-left-radius:0.75rem;background-color:#ff5b45;font-size: 0.6rem;color:#fff;position: absolute;right:0;top:1.35rem;}
+		}
+		.item-right:before{
+			content:'';display:block;width:1px;height:2.25rem;background-color:#e5e5e5;position: absolute;left:0;top:0.75rem;transform-origin: 100% 50%;
+		}
+	}
+	.product-item.act{
+		.item-left:after{
+			content:'活动';display:block;width:0.75rem;height:1.5rem;text-align: center;font-size:0.5rem;color:#fff;background-color: #ffcc53;padding-top:0.2rem;position: absolute;right:-1px;top:1.1rem;border-top-left-radius:3px;border-bottom-left-radius: 3px;line-height: 0.6rem;
+		}
+	}
+	.product-item:after{
+		content:'';display: block;height: 1px;width: 100%;background-color:#e5e5e5; transform-origin: 50% 100%;left:0;right:0;bottom:0;position: absolute;
+	}
+	.product-item.unabled{
+		.item-left{
+			.percent{color:#848484;}
+		}
+		.item-left:after{
+			background-color: #ccc;
+		}
+		.item-right{
+			.pro-title{color:#848484;}
+			.buy-log{background-color:#cccccc;}
+		}
+	}
+}
+.hot-news{height: 2.2rem;line-height: 2.2rem;padding:0 0.5rem;
+	.link{font-size: 0.75rem;color:#333;    display: block; white-space: nowrap;  overflow: hidden; text-overflow: ellipsis;}
+}
+.new-list{
+	background-color: #fff;
+	.list-head{
+		height: 2.2rem;line-height: 2.2rem;position: relative;padding:0 0.6rem;
+		.head-title{font-size:0.65rem;color:#333;font-weight: bold;}
+		.head-title:before{
+			content:'';display:inline-block;width:0.5rem;height: 0.5rem;vertical-align: middle;background-color:#00aaee;margin: -0.1rem 0.4rem 0 0;
+		}
+		.more{position: absolute;top:0;bottom:0;right:0.6rem;font-size: 0.6rem;color:#a5a5a5;background: url(../../assets/ico/tonext.png) center right no-repeat;background-size:auto 0.5rem;padding-right:0.6rem;}
+	}
+	.list-head:after{
+		content: '';height: 1px;width: 100%;background-color: #e5e5e5;display: block;position: absolute;left:0;right:0;bottom:0;transform-origin: 50% 100%;
+	}
+}
+.list-new{padding:0 0.6rem;background-color: #fff;margin-bottom: 0.75rem;
+	.new-item{
+		position: relative;height: 4.95rem;padding:0.7rem 0;
+		.new-title{font-size: 0.75rem;color:#333;line-height:1rem;width:9.75rem;margin-bottom: 0.5rem;    text-overflow: ellipsis;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+		.time{font-size: 0.6rem;color:#a5a5a5;width:9.75rem;}
+		.img{width:4.5rem;height:3.55rem;position: absolute;top:0.7rem;right:0;}
+		&:last-child:after{display:none;}
+	}
+	.new-item:after{content: '';height: 1px;width: 100%;display: block;background-color: #e5e5e5;position: absolute;left:0;right:0;bottom:0;    transform-origin: 50% 100%;}
+}
+.link-line{background-color: #fff;padding: 0 0.6rem;margin-bottom: 0.5rem;
+	.link-item{height:2.2rem;line-height: 2.2rem;position: relative;display: block;font-size: 0.8rem;color:#333;background:url(../../assets/ico/tonext.png) right center no-repeat;background-size:auto 0.65rem;
+		&:after{
+		content: '';height: 1px;width: 100%;display: block;background-color:#e5e5e5;position: absolute;left:0;right:0;bottom:0;transform-origin: 50% 100%;
+		}
+		&:last-child:after{
+		display: none;
+		}
+	}
+	
+}

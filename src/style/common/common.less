@@ -96,7 +96,7 @@ sub {
   bottom: -0.25em;
 }
 img {
-  border: 0;
+  border: 0;display: block;
   max-width: 100%;
 }
 svg:not(:root) {
@@ -459,27 +459,32 @@ background-position: 0 100%;
 }
 .icon.eye{width:1.05rem;height:0.775rem;background: url(../../assets/ico/eye-all.png) no-repeat;background-size: 100% auto;background-position: 0 0;vertical-align: middle;margin-left:0.25rem;margin-top:-0.4rem;}
 .icon.eye.active{background-position: 0 100%;}
+.icon.new-gg{width: 2rem;display: inline-block;vertical-align: middle;margin-right: 0.4rem;}
 
-
+/*分页*/
+.page-swiper{
+  .swiper-pagination-bullet{width:0.25rem;height: 0.25rem;background:#fff;opacity: 0.3;}
+  .swiper-pagination-bullet.swiper-pagination-bullet-active{opacity: 1;}
+}
 /*线条*/
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   /*横线*/
-  .bar-tab:before,.card-pro .card-head:after,.user-tab:after,.user-link .link-line:after,.bar.reg-line:after {
+  .bar-tab:before,.card-pro .card-head:after,.user-tab:after,.user-link .link-line:after,.bar.reg-line:after,.gs-time-select:after,.gs-product .product-item:after,.new-list .list-head:after,.list-new .new-item:after,.link-line .link-item:after {
     transform: scaleY(0.5);
   }
   /*竖线*/
- .card-pro .tab-item.line:before,.user-head .head-tab .tab-item.line:before,.user-link .link-line .link-item.line:after{
+ .card-pro .tab-item.line:before,.user-head .head-tab .tab-item.line:before,.user-link .link-line .link-item.line:after,.gs-product .product-item .item-right:before{
    transform: scaleX(0.5);
  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 3) {
   /*横线*/
-  .bar-tab:before,.card-pro .card-head:after,.user-tab:after,.user-link .link-line:after,.bar.reg-line:after {
+  .bar-tab:before,.card-pro .card-head:after,.user-tab:after,.user-link .link-line:after,.bar.reg-line:after,.gs-time-select:after,.gs-product .product-item:after,.new-list .list-head:after,.list-new .new-item:after,.link-line .link-item:after {
     transform: scaleY(0.33);
   }
   /*竖线*/
-  .card-pro .tab-item.line:before,.user-head .head-tab .tab-item.line:before,.user-link .link-line .link-item.line:after{
+  .card-pro .tab-item.line:before,.user-head .head-tab .tab-item.line:before,.user-link .link-line .link-item.line:after,.gs-product .product-item .item-right:before{
    transform: scaleX(0.33);
  }
 }

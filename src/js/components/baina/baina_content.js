@@ -6,7 +6,7 @@ export default  class BainaContent extends Component{
 		return(
 			<div className="content">
 				<div className="bai-top">
-					<Link to=""><img src="./assets/images/bl-top.png" /></Link>
+					<Link to="whybn"><img src="./assets/images/bl-top.png" /></Link>
 				</div>
 				<div className="bai-list clearfix">
 					<div className="bai-item pull-left">

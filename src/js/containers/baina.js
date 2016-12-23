@@ -9,7 +9,7 @@ export default  class Baina extends Component{
 		return (
 			<div className="page-group">
 				<div className="page">
-					<FootNav  index='1' />
+					<FootNav index='1' />
 					<BainaContent/>
 				</div>
 			</div>
