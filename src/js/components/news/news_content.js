@@ -41,7 +41,7 @@ export default  class NewsContent extends Component{
 					</div>
 				</div>
 
-				<div className="link-line">
+				<div className="link-list">
 					<Link to="" className="link-item">关于我们</Link>
 					<Link to="" className="link-item">联系客服</Link>
 					<Link to="" className="link-item">常见问题</Link>

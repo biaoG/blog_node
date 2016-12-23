@@ -2822,7 +2822,7 @@ webpackJsonp([0],{
 					),
 					_react2.default.createElement(
 						'div',
-						{ className: 'link-line' },
+						{ className: 'link-list' },
 						_react2.default.createElement(
 							_reactRouter.Link,
 							{ to: '', className: 'link-item' },
