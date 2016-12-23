@@ -1,9 +1,6 @@
 .home-top {
   height: 7.2rem;
   background-color: #00aaee;
-  background-image: url(../../assets/images/home-top-bg.png);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   position: relative;
 }
 .home-top .banner {
