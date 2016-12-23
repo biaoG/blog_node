@@ -9,7 +9,7 @@ export default  class News extends Component{
 		return(
 			<div className="page-group">
 				<div className="page">
-				<FootNav/>
+				<FootNav index="3"/>
 				<NewsContent/>
 				</div>
 			</div>

@@ -2649,7 +2649,7 @@ webpackJsonp([0],{
 					_react2.default.createElement(
 						'div',
 						{ className: 'page' },
-						_react2.default.createElement(_foot_nav2.default, null),
+						_react2.default.createElement(_foot_nav2.default, { index: '3' }),
 						_react2.default.createElement(_news_content2.default, null)
 					)
 				);
